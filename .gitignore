@@ -1,0 +1,40 @@
+# --- Code-only repo: large/binary/user-specific artifacts excluded ------ #
+
+# Python bytecode + caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# ML model weights (Ultralytics auto-downloads yolov8n.pt on first run)
+*.pt
+*.onnx
+
+# Video files — dashcam clips and recordings are NOT redistributed.
+# Put your own dashcam.mp4 in data/ (see data/README.txt).
+*.mp4
+*.mov
+*.mkv
+*.avi
+
+# Output artifacts from running the app / smoke tests
+outputs/
+
+# Local lane calibration is user/video-specific — keep out of repo.
+data/lane_calibration.json
+
+# IDE / editor scratch
+.vscode/
+.idea/
+*.swp
+
+# Claude Code session config (contains absolute local paths)
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
